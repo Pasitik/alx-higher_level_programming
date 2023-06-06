@@ -9,9 +9,9 @@ else:
 
 message = f"Last digit of {number} is {lastdigit}"
 
-if lastdigit > 5 and  lastdigit % 10 != 0:
-	print(f"{message} and is greater than 5\n")
-elif lastdigit == 0:
-	print(f"{message} and is zero\n")
+if lastdigit == 0:
+	print(f"{message} and is zero")
+elif lastdigit > 5 and  lastdigit % 10 != 0:
+	print(f"{message} and is greater than 5")
 else:
-	print(f"{message} is less than 6 and is not zero\n")
+	print(f"{message} is less than 6 and is not zero")
