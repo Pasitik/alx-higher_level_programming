@@ -6,9 +6,12 @@ if number >= 0:
 	lastdigit = number % 10
 else:
 	lastdigit = (-number % 10) * -1
-if lastdigit < 6 and lastdigit != 0:
-	print(f"Last digit of {number} is {lastdigit} and is less then 6 and not zero")
+
+message = f"Last digit of {number} is {lastdigit}"
+
+if lastdigit > 5:
+	print(f"{message} and is greater than 5")
 elif lastdigit == 0:
-	print(f"Last digit of {number} is {lastdigit} and is zero")
+	print(f"{message} and is zero")
 else:
-	print(f"Last digit of {number} is {lastdigit} and is greater than 5")
+	print(f"{message} is less than 6 and is not zero")
