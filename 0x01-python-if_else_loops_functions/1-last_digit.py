@@ -10,8 +10,8 @@ else:
 message = f"Last digit of {number} is {lastdigit}"
 
 if lastdigit > 5 and  lastdigit % 10 != 0:
-	print(f"{message} and is greater than 5")
+	print(f"{message} and is greater than 5\n")
 elif lastdigit == 0:
-	print(f"{message} and is zero")
+	print(f"{message} and is zero\n")
 else:
-	print(f"{message} is less than 6 and is not zero")
+	print(f"{message} is less than 6 and is not zero\n")
