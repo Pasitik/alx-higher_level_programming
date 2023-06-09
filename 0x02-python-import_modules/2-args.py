@@ -5,7 +5,7 @@ if __name__ == "__main__":
     argLen = len(argv) - 1
     if argLen == 0:
         print("{} arguments.".format(argLen))
-    if argLen == 1:
+    elif argLen == 1:
         print("{} argument:".format(argLen))
         print("{}: {}".format(argLen, argv[argLen]))
 
