@@ -15,4 +15,4 @@ def roman_to_int(roman_string):
                 track = rom
         return (num)
     else:
-        return (None)
+        return (0)
