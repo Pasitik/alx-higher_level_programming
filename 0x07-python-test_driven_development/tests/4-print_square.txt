@@ -1,0 +1,49 @@
+"""
+# Importing the required function
+>>> from importlib import import_module
+>>> print_square = __import__('4-print_square').print_square
+
+# pass case
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square("4")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# negative numbers
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+# float
+>>> print_square(2.2)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# none
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# negative float
+>>> print_square(-7.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# no args
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+"""
