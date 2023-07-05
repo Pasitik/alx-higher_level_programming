@@ -1,0 +1,37 @@
+"""
+# Importing the required function
+>>> from importlib import import_module
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# valid case
+>>> text_indentation("""Hello! I am Asitik. Do you know me? I am a wonderful guy.""")
+Hello! I am Asitik.
+<BLANKLINE>
+Do you know me?
+<BLANKLINE>
+I am a wonderful guy.
+<BLANKLINE>
+
+>>> text_indentation("""   Hello! I am Asitik    """)
+Hello! I am Asitik
+
+>>> text_indentation("""   Hello! I am Asitik.    Do you know me? I am a wonderful guy.""")
+Hello! I am Asitik.
+<BLANKLINE>
+Do you know me?
+<BLANKLINE>
+I am a wonderful guy.
+<BLANKLINE>
+
+>>> text_indentation((1, 2))
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+"""
