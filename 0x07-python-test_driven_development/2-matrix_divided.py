@@ -20,7 +20,7 @@ def matrix_divided(matrix, div):
     lenValid = all(len(row) == len(matrix[0]) for row in matrix)
 
     if not isValid:
-        raise TypeError("matrix must be a matrix 
+        raise TypeError("matrix must be a matrix
                         (list of lists) of integers/floats")
     if not lenValid:
         raise TypeError("Each row of the matrix must have the same size")
