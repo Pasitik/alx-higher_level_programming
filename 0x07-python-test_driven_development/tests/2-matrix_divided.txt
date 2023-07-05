@@ -3,6 +3,12 @@
 >>> from importlib import import_module
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
+# test for list
+>>> matrix_divided((1, 2), 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 #list of integer or float
 >>> matrix_divided([[1, '2', 3], [4, 5, 6]], 3)
 Traceback (most recent call last):

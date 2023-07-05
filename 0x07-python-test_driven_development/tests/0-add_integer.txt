@@ -12,6 +12,12 @@
 3
 >>> add_integer(100, -2)
 98
+>>> add_integer(-1, -1)
+-2
+
+# test for floats
+>>> add_integer(1.55, 1)
+2
 
 # a not an integer
 >>> add_integer('1', 1)
