@@ -5,4 +5,4 @@
 def class_to_json(obj):
     """Return the dictionary represntation of a simple data structure."""
     if isinstance(obj, MyClass):
-        return{"name": obj.name, "number": obj.number}
+        return obj.__dict__
