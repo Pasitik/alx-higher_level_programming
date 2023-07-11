@@ -13,7 +13,7 @@ def pascal_triangle(n):
     Args:
         n (int): integer used to build the pascal triangle
     """
-	arr = []
+    arr = []
     for row in range(n):
         temp = [1]
         for j in range(row):
