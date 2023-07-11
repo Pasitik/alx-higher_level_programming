@@ -1,29 +1,15 @@
 #!/usr/bin/python3
-
-"""
-A script to load from and/or dump to
-a file
-"""
-
-
+"""Add all arguments to a Python list and save them to a file."""
 import sys
-save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
-filename = "add_item.json"
-new_list_items = sys.argv[1:]
-items = []
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        __import__('6-load_from_json_file').load_from_json_file
 
-try:
-    file = open(filename, 'r')
-    content = file.read()
-    file.close()
-    if len(content):
-        items = load_from_json_file(filename)
-except FileNotFoundError:
-    items = []
-
-for item in new_list_items:
-    items.append(item)
-
-save_to_json_file(items, filename)
+    try:
+        items = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        items = []
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, "add_item.json")
