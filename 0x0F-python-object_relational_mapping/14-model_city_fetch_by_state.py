@@ -16,4 +16,4 @@ if __name__ == "__main__":
     session = Session()
     for i in (session.query(State.name, City.id, City.name)
                      .filter(State.id == City.state_id)):
-        print("{}: ({}) {}".format(i[0], str(i[2]), i[1]))
+        print(i[0] + ": (" + str(i[1]) + ") " + i[2])
