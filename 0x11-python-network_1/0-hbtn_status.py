@@ -8,12 +8,11 @@
 if __name__ == '__main__':
     import urllib.request
 
-    req = urllib.request.Request("https://alx-intranet.hbtn.io/status")
-    with urllib.request.urlopen(req) as response:
+    with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
         data = response.read()
         utf8_content = data.decode('utf-8')
 
-        print("Body response:")
-        print("\t- type:", type(data))
-        print("\t- content", data)
-        print("\t- utf8 content", utf8_content)
+    print("Body response:")
+    print("\t- type:", type(data))
+    print("\t- content", data)
+    print("\t- utf8 content", utf8_content)
