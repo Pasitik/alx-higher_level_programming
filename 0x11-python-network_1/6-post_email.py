@@ -10,6 +10,5 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
     payload = {"email": sys.argv[2]}
-    r = requests.post(url, json=payload)
-	res = r.json()
-    print("Your email is:", res["email"])
+    r = requests.post(url, data=payload)
+    print("Your email is:", r.text)
