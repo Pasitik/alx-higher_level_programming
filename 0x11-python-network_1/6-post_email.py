@@ -10,5 +10,6 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
     payload = {"email": sys.argv[2]}
-    r = requests.get(sys.argv[1], data=payload)
+    r = requests.get(url, data=payload)
     print("Your email is:", sys.argv[2])
+    print(r.text)
