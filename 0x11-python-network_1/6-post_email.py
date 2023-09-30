@@ -9,6 +9,7 @@ import requests
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    payload = {"email": sys.argv[2]}
+    email = sys.argv[2]
+    payload = {"email": email}
     r = requests.post(url, data=payload)
     print("Your email is:", r.text)
